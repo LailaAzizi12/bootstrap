@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="index.css"/>
   </head>
 
   <body>
@@ -52,7 +53,12 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#scrollFAQ"
+                  >FAQ</a
+                >
               </li>
               <li class="nav-item dropdown">
                 <div class="btn-group">
@@ -201,8 +207,105 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid text-center" style="background-color: #f8baac; color:rgb(80, 69, 69);">
+  <div class="container text-start pt-3" id="scrollFAQ">
+    <h5 class="text-center">Preguntas Frecuentes</h5>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            ¿Ofrecen servicio para llevar o a domicilio?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p><span class="fw-semibold">Sí, ofrecemos servicio para llevar y a domicilio.</span>  Puedes visitarnos en nuestra cafetería para recoger tu pedido o, si prefieres, te lo llevamos hasta la puerta de tu casa.</p>
+            <p>Puedes realizar tu pedido para llevar en el local o llamarnos con anticipación para que esté listo cuando llegues.</p>
+            <p>Por otro lado, las entregas a domicilio se realizan dentro de la Comarca de Pamplona. Puedes hacer tu pedido a través de la web, correo, por WhatsApp o llamándonos. Estaremos encantados de atederte.</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            ¿Tienen opciones sin gluten, veganas o sin azúcar?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p><span class="fw-semibold">¡Sí, tenemos opciones para todos los gustos y necesidades!</span> Contamos con una selección de postres y salados elaborados sin gluten. También disponemos de deliciosas opciones sin ingredientes de origen animal, así como alternativas a postres saludables.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            ¿Puedo hacer un pedido personalizado de pasteles o postres?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p><span class="fw-semibold">¡Por supuesto! Hacemos pedidos personalizados de pasteles y postres.</span>Puedes elegir el tamaño, sabor, diseño y decoración según tu preferencia. Solo necesitamos que nos avises con al menos 10 días de anticipación para garantizar que tu pedido sea perfecto.</p>
+            <p>Contáctanos por WhatsApp, teléfono o correo para más detalles y cotizaciones. </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+            ¿Puedo modificar o cancelar un pedido una vez hecho?
+          </button>
+        </h2>
+        <div id="flush-collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p><span class="fw-semibold">Sí, puedes modificar o cancelar tu pedido, pero con ciertas condiciones.</span></p>
+            <p>Se acepta modificar el pedido para cambios en sabores, tamaños o decoraciones si nos avisas con al menos <span class="fw-semibold">2 días de anticipación.</span></p>
+            <p>Las cancelaciones se pueden realizar sin costo si se notifican dentro de <span class="fw-semibold">2 días</span> antes de la entrega. Después de ese plazo, podría aplicarse un cargo.</p>
+            <p>Para realizar cualquier cambio, contáctanos lo antes posible por WhatsApp o por teléfono y con gusto te ayudaremos. </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+            ¿Qué formas de pago aceptan?
+          </button>
+        </h2>
+        <div id="flush-collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p><span class="fw-semibold">Aceptamos varias formas de pago para tu comodidad.</span> Aceptamos efectivo (en el local), tarjetas de débito y crédito, tranferencia bancaria, PayPal y Bizum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+            ¿Tienen promociones o descuentos especiales?
+          </button>
+        </h2>
+        <div id="flush-collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p><span class="fw-semibold">¡Sí, tenemos promociones y descuentos especiales!</span></p>
+            <p>Lanzamos ofertas exclusivas en diferentes productos, combos y fechas especiales. Para no perderte ninguna promoción, <span class="fw-semibold">síguenos en nuestras redes sociales o nuestra newsletter</span> y mantente al tanto de todas nuestras novedades.</p>
+            <p>Encuéntranos en Instagram, Facebook y X como <span class="fst-italic">LayaliCoffee</span> y disfruta de descuentos deliciosos. ¡Te esperamos! </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-3 pt-2 fw-semibold text-center" style="color:rgb(80, 69, 69);">
+      <h4>948 45 36 30</h4>
+      <h4>layali@coffee.es</h4>
+    </div>
+  </div>
+  <div class="container-fluid text-center" style="background-color: rgb(252, 229, 210); color:rgb(80, 69, 69);">
     <div class="row align-items-start pt-2">
+      <div class="col">
+        <h5>HORARIO</h5>
+        <div class="mb-3 mt-2 fw-semibold">
+          <p>Martes a domingo de 8:00 - 20:00</p>
+          <p>Lunes Cerrado</p>
+        </div>
+      </div>
       <div class="col">
         <h5>CONTACTO</h5>
         <div class="mb-3 mt-2 fw-semibold">
@@ -217,12 +320,11 @@
           </svg>
           948 45 36 30
         </div>
-      </div>
-      <div class="col">
-        <h5>HORARIO</h5>
-        <div class="mb-3 mt-2 fw-semibold">
-          <p>Martes a domingo de 8:00 - 20:00</p>
-          <p>Lunes Cerrado</p>
+        <div class="mb-3 fw-semibold">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+          </svg>
+          layali@coffee.es
         </div>
       </div>
       <div class="col">
