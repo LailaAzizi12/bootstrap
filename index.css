@@ -5,3 +5,23 @@
 .accordion-button:focus{
     box-shadow: 0 0 0 0.25rem rgb(250, 219, 193);
 }
+.form-control:focus{
+    box-shadow: rgb(250, 219, 193) 0px 0px 0px 0.25rem;
+    border-color: rgb(250, 219, 193);
+}
+.btn{
+    background-color: rgb(250, 219, 193);
+}
+.btn:hover{
+    color: white;
+    background-color: rgb(240, 198, 163);
+}
+.form-check-input:focus{
+    border-color: rgb(240, 198, 163);;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgb(250, 219, 193);
+}
+.form-check-input:checked{
+    border-color: rgb(240, 198, 163);;
+    background-color: rgb(250, 219, 193);
+}
