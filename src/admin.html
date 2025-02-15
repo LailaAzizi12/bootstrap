@@ -1,13 +1,311 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Layali</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <h1>Hola!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb"
+      >
+        <div class="container-fluid">
+          <img
+            src="images/logoCafeteria.png"
+            alt="Logo"
+            width="100"
+            height="100"
+            class="d-inline-block align-text-top"
+          />
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="../index.html">Inicio</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Administración
+                </li>
+              </ol>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <button
+                class="btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header">
+        <img
+          src="images/logoCafeteria.png"
+          alt="Logo"
+          width="100"
+          height="100"
+          class="d-inline-block align-text-top"
+        />
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+          Administración Layali
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="#scrollPedidos"
+              >Pedidos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="#scrollVentas"
+              >Ventas</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container py-3" id="scrollPedidos">
+      <div class="table-responsive-md">
+        <h5 class="text-center">Pedidos</h5>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">ID Pedido</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Contacto</th>
+              <th scope="col">Producto/s</th>
+              <th scope="col">Fecha Pedido</th>
+              <th scope="col">Fecha Entrega</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Pagado</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <th scope="row">2141</th>
+              <td>Marko Galarza</td>
+              <td>marko.gali@gmail.com</td>
+              <td>Tarta kinder para 4</td>
+              <td>31/01/2025</td>
+              <td>15/02/2025</td>
+              <td>Entregado</td>
+              <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+              </svg></td>
+              <td>20 €</td>
+            </tr>
+            <tr>
+              <th scope="row">2142</th>
+              <td>Pepe Lozano</td>
+              <td>624114013</td>
+              <td>Caja dulces baklava, tarta especial para 2</td>
+              <td>13/02/2025</td>
+              <td>26/02/2025</td>
+              <td>Pendiente</td>
+              <td></td>
+              <td>40 €</td>
+            </tr>
+            <tr>
+              <th scope="row">2143</th>
+              <td>Ingrid Montoya</td>
+              <td>620240132</td>
+              <td>Surtido dulce y salado</td>
+              <td>14/02/2025</td>
+              <td>01/03/2025</td>
+              <td>Pendiente</td>
+              <td></td>
+              <td>30 €</td>
+            </tr>
+            <tr>
+              <th scope="row">2144</th>
+              <td>Estefanía García</td>
+              <td>estefa332@gmail.com</td>
+              <td>Surtido dulce sin gluten</td>
+              <td>14/02/2025</td>
+              <td>25/02/2025</td>
+              <td>Pendiente</td>
+              <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+              </svg></td>
+              <td>26 €</td>
+            </tr>
+            <tr>
+              <th scope="row">2145</th>
+              <td>Erik Salvador</td>
+              <td>salvaerik242@hotmail.com</td>
+              <td>Tarta cheesecake Frutos Rojos</td>
+              <td>02/02/2025</td>
+              <td>16/02/2025</td>
+              <td>Entregado</td>
+              <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+              </svg></td>
+              <td>20 €</td>
+            </tr>
+            <tr>
+              <th scope="row">2146</th>
+              <td>Josefina Estapan</td>
+              <td>693221311</td>
+              <td>Surtido dulce vegano</td>
+              <td>31/01/2025</td>
+              <td>10/02/2025</td>
+              <td>Cancelado</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">2147</th>
+              <td>Josune Iriarte</td>
+              <td>joaro22@gmail.com</td>
+              <td>Cheesecake caramelo para 6</td>
+              <td>27/01/2025</td>
+              <td>05/02/2025</td>
+              <td>Entregado</td>
+              <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+              </svg></td>
+              <td>45 €</td>
+            </tr>
+            <tr>
+              <th scope="row">2148</th>
+              <td>Javier Martínez</td>
+              <td>632052203</td>
+              <td>Surtido salado y dulce sin gluten</td>
+              <td>31/01/2025</td>
+              <td>12/02/2025</td>
+              <td>Entregado</td>
+              <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+              </svg></td>
+              <td>30 €</td>
+            </tr>
+            <tr>
+              <th scope="row">2149</th>
+              <td>Iñigo Quejido</td>
+              <td>powerque@hotmail.com</td>
+              <td>Tarta lotus y surtido salado para 4</td>
+              <td>07/02/2025</td>
+              <td>03/03/2025</td>
+              <td>Cancelado</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">2150</th>
+              <td>Adrián Jiménez</td>
+              <td>elpokemones37@gmail.com</td>
+              <td>Surtido salado especial</td>
+              <td>06/02/2025</td>
+              <td>26/02/2025</td>
+              <td>Pendiente</td>
+              <td class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+              </svg></td>
+              <td>17 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="container py-3" id="scrollVentas">
+      <div class="table-responsive-md">
+        <h5 class="text-center">Venta semanal</h5>
+        <table class="table table-hover text-center">
+          <thead>
+            <tr>
+              <th scope="col">Fecha</th>
+              <th scope="col">Productos Vendidos</th>
+              <th scope="col">Producto más vendido</th>
+              <th scope="col">Ingreso efectivo</th>
+              <th scope="col">Ingreso tarjeta</th>
+              <th scope="col">Total Vendido</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <th scope="row">15/02/2025</th>
+              <td class="text-center">214</td>
+              <td>Cheesecake frutos rojos</td>
+              <td class="text-center">400 €</td>
+              <td class="text-center">570 €</td>
+              <td class="text-center">970 €</td>
+            <tr>
+              <th scope="row">14/02/2025</th>
+              <td class="text-center">164</td>
+              <td>Capuccino</td>
+              <td class="text-center">356 €</td>
+              <td class="text-center">560 €</td>
+              <td class="text-center">916 €</td>
+            </tr>
+            <tr>
+              <th scope="row">13/02/2025</th>
+              <td class="text-center">236</td>
+              <td>Tarta oreo</td>
+              <td class="text-center">250 €</td>
+              <td class="text-center">450 €</td>
+              <td class="text-center">700 €</td>
+            </tr>
+            <tr>
+              <th scope="row">12/02/2025</th>
+              <td class="text-center">290</td>
+              <td>Baklava pistacho</td>
+              <td class="text-center">450 €</td>
+              <td class="text-center">780 €</td>
+              <td class="text-center">1330 €</td>
+            </tr>
+            <tr>
+              <th scope="row">11/02/2025</th>
+              <td class="text-center">241</td>
+              <td>Tostada mediterránea</td>
+              <td class="text-center">360 €</td>
+              <td class="text-center">500 €</td>
+              <td class="text-center">860 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
