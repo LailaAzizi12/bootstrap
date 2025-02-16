@@ -163,11 +163,10 @@
                   </ul>
                 </div> 
               </li>
-              <li class="nav-item">
-                <a href="src/admin.html">Admin</a>
-              </li>
             </ul>
-            
+            <a href="src/admin.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-gear-fill ms-2 align-text-top" viewBox="0 0 16 16">
+              <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+            </svg></a>
           </div>
         </div>
       </nav>
@@ -207,11 +206,19 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-md-block">
-              <h1 class="animate__animated animate__slideInDown fw-bolder">
+            <div class="carousel-caption d-md-block carrousel-title">
+              <div class="animate__animated animate__slideInDown">
+                <img
+              src="src/images/logoCafeteria1.png"
+              alt="Logo"
+              width="250"
+              height="250"
+            />
+              <h1 class="display-1 fw-bolder">
                 Layali's Coffee
               </h1>
-              <p>Bienvenido a tu rincón de paz y tranquilidad</p>
+              </div>
+              <p class="display-6">Bienvenido a tu rincón de paz y tranquilidad</p>
             </div>
           </div>
           <div class="carousel-item">
@@ -220,8 +227,11 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-md-block">
-              <p>Aquí podrás disfrutar de nuestros dulces y salados</p>
+            <div class="carousel-caption d-md-block carrousel-title align-items-center">
+              <h2 class="fw-bolder">
+                Aquí podrás disfrutar de nuestros </h2>
+                <h2 class="fw-bolder">dulces y salados
+                </h2>
             </div>
           </div>
           <div class="carousel-item">
@@ -230,16 +240,22 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-md-block">
-              <p>Además de una gran variedad de cafés de especialidad</p>
+            <div class="carousel-caption d-md-block carrousel-title">
+              <h2 class="fw-bolder">
+                Además de una gran variedad de cafés </h2>
+                <h2 class="fw-bolder">de especialidad
+                </h2>
             </div>
           </div>
         </div>
+
       </div>
+      
+      
     </div>
   </div>
-  <div class="container py-3  text-center" id="scrollFavoritos">
-    <h5>Productos Destacados</h5>
+  <div class="container py-4  text-center" id="scrollFavoritos">
+    <h2 class="titulo mb-3">Productos Destacados</h2>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 py-2">
       <div class="col">
         <div class="card h-100">
@@ -280,10 +296,12 @@
       </div>
     </div>
   </div>
-  <div class="container text-start pt-3" id="scrollFAQ" >
-    <h5 class="text-center">Preguntas Frecuentes</h5>
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
+  <div class="container-fluid py-3" id="scrollFAQ" style="background-color: rgb(239, 234, 230);">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6">
+    <h2 class="titulo text-center mb-3">Preguntas Frecuentes</h2>
+    <div class="accordion accordion-flush rounded overflow-hidden shadow" id="accordionFlushExample">
+      <div class="accordion-item"> 
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
             ¿Ofrecen servicio para llevar o a domicilio?
@@ -365,75 +383,88 @@
         </div>
       </div>
     </div>
-    <div class="mb-3 pt-2 fw-semibold text-center" style="color:rgb(80, 69, 69);">
+  </div>   
+  </div>
+    <div class="my-3 pt-2 fw-semibold text-center" style="color:rgb(80, 69, 69);">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chat-text-fill mb-2" viewBox="0 0 16 16">
+        <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
+      </svg>
       <h4>948 45 36 30</h4>
       <h4>layali@coffee.es</h4>
     </div>
   </div>
   <div class="container text-center my-4 d-flex justify-content-around" id="scrollNosotros">
     <div class="row align-items-center w-75">
-      <div class="col border rounded py-3 w-25 me-5" style="background-color: rgb(250, 219, 193); border-color: rgb(240, 198, 163);">
-        <h5>Nuestra historia</h5>
-        <em>
-          <p>"Todo comenzó en 2021 con un simple pero hermoso sueño: crear un lugar donde el aroma del café y el dulce sabor de la repostería artesanal se combinaran para hacer felices a las personas. 
-            </p><p>En Layali, cada receta está inspirada en la tradición y en el amor por los detalles.</p>
-
-          <p>Nuestro compromiso es ofrecer productos frescos, hechos con ingredientes de calidad y mucho cariño. Más que una cafetería, somos un espacio acogedor donde las charlas fluyen, los momentos especiales se celebran y cada taza de café cuenta una historia.</p>
-          
-          <p>Hoy seguimos creciendo, pero sin perder nuestra esencia: hacer que cada visita sea una experiencia única.</p> <p>¡Gracias por ser parte de nuestra historia!"</p></em>
+      <h2 class="titulo text-center mb-3">Nuestra historia</h2>
+      <div class="col border rounded py-3 w-25 me-5" style="background-color: rgb(239, 234, 230);">
+        <div class="card" style="background-color: rgb(239, 234, 230); color: rgb(80, 69, 69); border: none;">
+          <div class="card-body">
+            <em>
+              <p>"Todo comenzó en 2021 con un simple pero hermoso sueño: crear un lugar donde el aroma del café y el dulce sabor de la repostería artesanal se combinaran para hacer felices a las personas. 
+                </p><p>En Layali, cada receta está inspirada en la tradición y en el amor por los detalles.</p>
+    
+              <p>Nuestro compromiso es ofrecer productos frescos, hechos con ingredientes de calidad y mucho cariño. Más que una cafetería, somos un espacio acogedor donde las charlas fluyen, los momentos especiales se celebran y cada taza de café cuenta una historia.</p>
+              
+              <p>Hoy seguimos creciendo, pero sin perder nuestra esencia: hacer que cada visita sea una experiencia única.</p> <p>¡Gracias por ser parte de nuestra historia!"</p>
+            </em>
+          </div>
       </div>
-      <div class="col">
-        <img src="src/images/sobreNosotros.png" class="d-block w-75 rounded" alt="sobreNosotros"/>
+      </div>
+      <div class="col-12 col-md-6">
+          <img src="src/images/sobreNosotros.png" class="img-fluid w-75 h-75 rounded" alt="sobreNosotros"/>
+
       </div>
     </div>
   </div>
-  <div class="container text-center my-4" id="scrollNewsLetter">
-    <div class="row">
-      <div class="col text-center">
-        <h5>No te pierdas nuestras novedades</h5>
-        <p>Suscríbete a nuestra newsletter y recibe ofertas exclusivas, novedades y eventos especiales en nuestra cafetería.</p>
-        <form class="mt-2 w-75 d-inline-block">
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingPassword" placeholder="Nombre" required>
-            <label for="floatingPassword">Nombre</label>
-          </div>
-          <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="Email" required>
-            <label for="floatingInput">Email</label>
-          </div>
-          <div class="col-12 mt-1 text-start">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-              <label class="form-check-label" for="invalidCheck2">
-                <small>He leído y acepto la política de privacidad</small> 
-              </label>
+  <div class="container-fluid text-center py-4" id="scrollNewsLetter" style="background-color: rgb(239, 234, 230); color:rgb(80, 69, 69); ">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h3 class="titulo my-3">No te pierdas nuestras novedades</h3>
+          <p>Suscríbete a nuestra newsletter y recibe ofertas exclusivas, novedades y eventos especiales en nuestra cafetería.</p>
+          <form class="mt-2 w-75 d-inline-block">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingPassword" placeholder="Nombre" required>
+              <label for="floatingPassword">Nombre</label>
             </div>
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="Email" required>
+              <label for="floatingInput">Email</label>
+            </div>
+            <div class="col-12 mt-1 text-start">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  <small>He leído y acepto la política de privacidad</small> 
+                </label>
+              </div>
+            </div>
+            <div class="col-12 mt-3 d-grid gap-2">
+              <button class="btn" type="submit">Me apunto</button>
+            </div>
+          </form>
+        </div>
+        <div class="col">
+          <div class="text-center">
+            <h3 class="text-center titulo my-3">Visítanos y vive la experiencia</h3>
+            <p>Mientras esperas nuestras novedades, ven a disfrutar de un café especial en un ambiente acogedor.</p>
+            <img src="src/images/mapaCafeteria.png" width="270" height="250" class="rounded-5" alt="mapa">
           </div>
-          <div class="col-12 mt-2 d-grid gap-2">
-            <button class="btn" type="submit">Me apunto</button>
-          </div>
-        </form>
-      </div>
-      <div class="col">
-        <div class="text-center">
-          <h5 class="text-center">Visítanos y vive la experiencia</h5>
-          <p>Mientras esperas nuestras novedades, ven a disfrutar de un café especial en un ambiente acogedor.</p>
-          <img src="src/images/mapaCafeteria.png" width="270" height="250" class="rounded-5" alt="mapa">
         </div>
       </div>
-    </div>
   </div>
-  <div class="container-fluid text-center" style="background-color: rgb(252, 229, 210); color:rgb(80, 69, 69);">
+</div>
+  <div class="container-fluid text-center border-top border-1" style="background-color: rgb(252, 229, 210); color:rgb(80, 69, 69);">
     <div class="row align-items-start pt-2">
       <div class="col">
-        <h5>HORARIO</h5>
+        <h5 class="titulo">HORARIO</h5>
         <div class="mb-3 mt-2 fw-semibold">
           <p>Martes a domingo de 8:00 - 20:00</p>
           <p>Lunes Cerrado</p>
         </div>
       </div>
       <div class="col">
-        <h5>CONTACTO</h5>
+        <h5 class="titulo">CONTACTO</h5>
         <div class="mb-3 mt-2 fw-semibold">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill mb-1" viewBox="0 0 16 16">
             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
@@ -454,7 +485,7 @@
         </div>
       </div>
       <div class="col">
-        <h5>ENLACES DE INTERÉS</h5>
+        <h5 class="titulo">ENLACES DE INTERÉS</h5>
          <div class="mb-3 mt-2 fw-semibold">
           <h6>Política de Cookies</h6>
           <h6>Política de privacidad</h6>
@@ -483,5 +514,8 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.documentElement.style.setProperty('--animate-duration', '2s');
+    </script>
   </body>
 </html>

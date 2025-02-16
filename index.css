@@ -22,7 +22,7 @@
     box-shadow: 0 0 0 .25rem rgb(250, 219, 193);
 }
 .form-check-input:checked{
-    border-color: rgb(240, 198, 163);;
+    border-color: rgb(240, 198, 163);
     background-color: rgb(250, 219, 193);
 }
 a{
@@ -37,4 +37,16 @@ a{
 .btn-popover:hover{
     background-color: transparent;
     color: rgb(13, 202, 240);
+}
+.titulo{
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(233, 183, 141);
+    text-shadow: 1px 1px 1px rgb(169, 169, 168);
+}
+.border-top{
+    border-color: rgb(169, 169, 168) !important;
+}
+.carrousel-title{
+    color: rgb(82, 59, 36);
 }
