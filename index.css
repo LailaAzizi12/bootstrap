@@ -29,3 +29,12 @@ a{
     color: rgb(240, 198, 163);
     text-decoration: none;
 }
+
+.btn-popover{
+    background-color: transparent;
+    border: none;
+}
+.btn-popover:hover{
+    background-color: transparent;
+    color: rgb(13, 202, 240);
+}
